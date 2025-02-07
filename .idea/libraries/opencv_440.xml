@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="opencv-440">
+    <CLASSES>
+      <root url="jar://C:/Program Files/AdoptOpenJDK/opencv/build/java/opencv-440.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="https://docs.opencv.org/4.4.0/" />
+    </JAVADOC>
+    <NATIVE>
+      <root url="file://C:/Program Files/AdoptOpenJDK/opencv/build/java/x64" />
+    </NATIVE>
+    <SOURCES>
+      <root url="jar://C:/Program Files/AdoptOpenJDK/opencv/build/java/opencv-440.jar!/" />
+    </SOURCES>
+  </library>
+</component>
