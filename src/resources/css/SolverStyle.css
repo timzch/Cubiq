@@ -1,0 +1,26 @@
+.speedSlider .thumb{
+    -fx-background-color: #eeeeee;
+    -fx-background-radius: 0;
+    -fx-background-insets: 9;
+    -fx-border-color: TRANSPARENT;
+    -fx-border-width: 3;
+    -fx-pref-height: 22;
+    -fx-pref-width: 27;
+}
+
+.speedSlider .track{
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0;
+
+}
+
+.speedProgressBar .track {
+    -fx-background-color: #838798;
+    -fx-background-radius: 0;
+
+}
+.speedProgressBar .bar{
+    -fx-background-color: #eaeaea;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0 0 0 0;
+}

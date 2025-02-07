@@ -1,0 +1,18 @@
+.closeButton {
+    -fx-image: url("../../../../resources/cubiq/assets/closeButton.png");
+}
+.closeButton:hover {
+    -fx-image: url("../../../../resources/cubiq/assets/closeButtonHover.png");
+}
+.minmaxButton {
+    -fx-image: url("../../../../resources/cubiq/assets/minmaxButton.png");
+}
+.minmaxButton:hover {
+    -fx-image: url("../../../../resources/cubiq/assets/minmaxButtonHover.png");
+}
+.minimizeButton {
+    -fx-image: url("../../../../resources/cubiq/assets/minimizeButton.png");
+}
+.minimizeButton:hover {
+    -fx-image: url("../../../../resources/cubiq/assets/minimizeButtonHover.png");
+}

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Polygon?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane style="-fx-background-color: TRANSPARENT; -fx-border-color: TRANSPARENT; -fx-border-insets: -1; -fx-padding: 0 0 0 0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cubiq.gui.HeaderController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="23.0" style="-fx-background-color: #3f464f; -fx-border-insets: -1; -fx-padding: 0 0 0 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox alignment="TOP_CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="60.0" style="-fx-background-color: TRANSPARENT; -fx-border-width: 0;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="138.0">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/headerLeft.png" />
+                     </image>
+                  </ImageView>
+                  <Polygon fx:id="pg_frameHeaderHitboxLeft" fill="#fafafa00" points="1.0, -23.5, 105.5, -23.5, 131.0, -60.0, 1.0, -60.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <Region HBox.hgrow="ALWAYS" />
+            <StackPane alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="99.0" prefWidth="1207.0">
+               <children>
+                  <ImageView fitHeight="99.0" fitWidth="1207.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/headerCenter.png" />
+                     </image>
+                  </ImageView>
+                  <Polygon fx:id="pg_frameHeaderHitboxCenter" fill="#ffffff00" points="233.0, 54.0, 419.0, 48.5, 473.0, 23.0, 1010.5, 23.0, 1066.5, 48.5, 1249.0, 54.0, 1303.5, 0.0, 176.5, 0.0" stroke="#ffffff00" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </StackPane>
+            <Region layoutX="148.0" layoutY="10.0" HBox.hgrow="ALWAYS" />
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: TRANSPARENT;">
+               <children>
+                  <ImageView fitHeight="46.0" fitWidth="138.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <image>
+                        <Image url="@../assets/headerRight.png" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="105.0" style="-fx-background-color: TRANSPARENT;" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <StackPane fx:id="sp_minimizePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#minimize" onMouseEntered="#mouseEnteredMinimize" onMouseExited="#mouseExitedMinimize" prefHeight="36.0" prefWidth="33.0" style="-fx-background-color: TRANSPARENT;">
+                           <children>
+                              <Line endX="5.0" startX="-5.0" stroke="#c9c9c9">
+                                 <StackPane.margin>
+                                    <Insets top="4.0" />
+                                 </StackPane.margin></Line>
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="sp_minMaxPane" layoutX="42.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onDragExited="#mouseExitedMinMax" onMouseClicked="#minMax" onMouseEntered="#mouseEnteredMinMax" onMouseExited="#mouseExitedMinMax" prefHeight="36.0" prefWidth="33.0" style="-fx-background-color: TRANSPARENT;">
+                           <children>
+                              <Rectangle fill="#ffffff00" height="8.0" stroke="#c9c9c9" strokeType="INSIDE" width="11.0" />
+                           </children>
+                        </StackPane>
+                        <StackPane fx:id="sp_exitPane" layoutX="60.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#exit" onMouseEntered="#mouseEnteredExit" onMouseExited="#mouseExitedExit" prefHeight="36.0" prefWidth="33.0" style="-fx-background-color: TRANSPARENT;">
+                           <children>
+                              <Line endX="4.0" endY="4.0" startX="-4.0" startY="-4.0" stroke="#c9c9c9" />
+                              <Line endX="-4.0" endY="4.0" startX="4.0" startY="-4.0" stroke="#c9c9c9" />
+                           </children>
+                        </StackPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets left="-1.0" />
+         </padding>
+      </HBox>
+      <AnchorPane fx:id="ap_frameHeaderHitboxBackground" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="23.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="0.0" />
+      <Text fx:id="title" disable="true" fill="#c9c9c9" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="borderText" text="Cubiq" textAlignment="CENTER" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="5.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+.progressGlowBar .track {
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0;
+}
+.progressGlowBar .bar{
+    -fx-background-color: #2bcebd;
+    -fx-border-color: #2bcebd;
+    -fx-border-width: 8;
+}
+
+.progressBar .track {
+    -fx-background-color: TRANSPARENT;
+    -fx-background-radius: 0;
+}
+.progressBar .bar{
+    -fx-background-color: #2bcebd;
+    -fx-border-color: #2bcebd;
+    -fx-border-width: 2;
+}
